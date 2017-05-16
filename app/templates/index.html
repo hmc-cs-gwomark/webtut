@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>{{ title }} - microblog</title>
+	</head>
+	<body>
+		<h1>
+			Hellow, {{user.username}}!
+		</h1>
+		{% for post in posts%}
+		<div><p>
+			{{post.author.username}} says: <b>{{post.body}}</b>
+			<br>
+			<p>{{post.date}}</p>
+		</p></div> <br>
+		{% endfor %}
+	</body>
+</html>
